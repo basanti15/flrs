@@ -1,0 +1,146 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fondo Beige + Blanco - Ramo más arriba</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(to top, #e2d2bf, #d4bfa7, #c5ab90, #b7987a, #a78667, #967557);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 920px;
+      text-align: center;
+      background: rgba(255, 253, 248, 0.78);
+      border-radius: 28px;
+      border: 1px solid rgba(245, 235, 215, 0.65);
+      padding: 30px 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+    .scene {
+      position: relative;
+      width: 420px;
+      height: 560px;
+      margin: 30px auto;
+    }
+    .stickman {
+      position: absolute;
+      left: 90px;
+      top: 50px;
+    }
+    .head {
+      width: 64px;
+      height: 64px;
+      background: #ffe0b2;
+      border-radius: 50%;
+      border: 5px solid #2d2d2d;
+      position: relative;
+      overflow: hidden;
+    }
+    .head img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .torso {
+      width: 14px;
+      height: 110px;
+      background: #2d2d2d;
+      position: absolute;
+      left: 25px;
+      top: 64px;
+      border-radius: 8px;
+    }
+    .arm-left, .arm-right {
+      width: 100px;
+      height: 10px;
+      background: #2d2d2d;
+      position: absolute;
+      top: 90px;
+      border-radius: 5px;
+      transform-origin: left center;
+    }
+    .arm-left {
+      left: -70px;
+      transform: rotate(40deg);
+    }
+    .arm-right {
+      left: 30px;
+      transform: rotate(-18deg);
+      width: 130px;
+      z-index: 1;
+    }
+    .leg-left, .leg-right {
+      width: 10px;
+      height: 120px;
+      background: #2d2d2d;
+      position: absolute;
+      top: 170px;
+      border-radius: 5px;
+    }
+    .leg-left  { left: 8px;  transform: rotate(12deg); }
+    .leg-right { left: 42px; transform: rotate(-12deg); }
+
+    /* Ramo - ¡más arriba! */
+    .bouquet {
+      position: absolute;
+      left: 118px;           /* un pelín más a la izquierda */
+      top: 95px;             /* antes era 125px → ahora más arriba */
+      width: 240px;
+      height: 300px;
+      z-index: 2;
+      transform: rotate(-8deg);
+      transform-origin: top left;
+    }
+    .bouquet img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    h1 {
+      margin: 10px 0 6px;
+      font-size: 2.4em;
+      color: #5d4037;
+    }
+    p {
+      margin: 8px 0;
+      font-size: 1.2em;
+      color: #4a372c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Esto es para ti...</h1>
+    <p>Para que sea un mejor Viernes 13 jijijiji ♡</p>
+
+    <div class="scene">
+      <div class="stickman">
+        <div class="head">
+          <img src="cara.jpg" alt="Cara">
+        </div>
+        <div class="torso"></div>
+        
+        <div class="arm-left"></div>
+        <div class="arm-right"></div>
+        
+        <div class="leg-left"></div>
+        <div class="leg-right"></div>
+      </div>
+
+      <div class="bouquet">
+        <img src="ramo.jpg" alt="Ramo de flores">
+      </div>
+    </div>
+
+    <p>De Santiago para Carolina, ahí más o menos :)</p>
+    <p style="font-size:0.95em; opacity:0.8;">(ramo subido para que la mano lo agarre mejor ♡)</p>
+  </div>
+</body>
+</html>
